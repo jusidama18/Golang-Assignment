@@ -31,7 +31,7 @@ type Member struct {
 	Alasan string
 }
 
-func (mem Member) parse() string {
+func (mem *Member) parse() string {
 	// Menambah Method untuk membuat tampilan data lebih enak dilihat.
 	result := "[ Biodata ]\n" + strings.Repeat("=", 50) + "\n"
 	result += fmt.Sprintln(`Nama		: 	`, mem.Nama)
