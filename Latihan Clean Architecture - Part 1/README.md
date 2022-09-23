@@ -3,6 +3,6 @@
         <b>Hasil Output : Endpoint `GET /users` menampilkan 2 data</b>
     <br>
     <a href="https://github.com/UsergeTeam/Userge">
-        <img src="https://telegra.ph/file/f3aed2f6f2d4a1ad7831d.png">
+        <img src="https://telegra.ph/file/fd2f9f98ed57cca4702e6.png">
     </a>
 </p>
