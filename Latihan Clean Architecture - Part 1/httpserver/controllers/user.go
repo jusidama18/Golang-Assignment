@@ -36,7 +36,7 @@ func CreateUser(ctx *gin.Context) {
 	WriteJsonRespnse(ctx, response)
 }
 
-func GetAllUser(ctx *gin.Context) {
+func ReadUser(ctx *gin.Context) {
 	response := services.ReadUser()
 	WriteJsonRespnse(ctx, response)
 }

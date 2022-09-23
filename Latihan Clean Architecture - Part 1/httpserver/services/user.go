@@ -19,7 +19,7 @@ func CreateUser(req *params.UserCreateRequest) *views.Response {
 		return views.BadRequestError(err)
 	}
 
-	user.ID = rand.Intn(100)
+	user.ID = rand.Intn(100000)
 	user.Password = string(hash)
 	user.Username = req.Username
 	
