@@ -1,9 +1,12 @@
 package main
 
-import "Assignment-2/config"
+import (
+	"Assignment-2/config"
+	"Assignment-2/repositories"
+)
 
 func main() {
-	config.InitDB()
+	db := config.InitDB()
+	repositories.MakeOrderRepo(db)
 
-	
 }

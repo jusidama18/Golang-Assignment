@@ -3,7 +3,7 @@ package repositories
 import (
 	"Assignment-2/repositories/models"
 
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
 type OrderRepos interface {
@@ -47,7 +47,7 @@ func (r *OrdersDB) GetOne(order models.Orders, ids int) error {
 }
 
 func (r *OrdersDB) Update(order models.Orders, ids int) error {
-	err := r.db.Where(`OrderID = ?`, ids).Update(&order).Error
+	err := r.db.Where(`OrderID = ?`, ids).Save(&order).Error
 	if err != nil {
 		return err
 	}
