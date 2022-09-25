@@ -5,6 +5,6 @@ import "time"
 type Orders struct {
 	OrderID      int
 	CustomerName string
-	OrderAt      time.Time
+	OrderedAt    time.Time
 	Items        []Items
 }
