@@ -1,7 +1,7 @@
 package main
 
 import (
-	"assignment-3/utils"
+	utils "assignment-3/appUtils"
 	"html/template"
 	"log"
 	"net/http"

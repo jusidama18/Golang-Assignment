@@ -1,4 +1,4 @@
-package utils
+package apputils
 
 type StatusCuaca struct {
 	Water int `json:"water"`

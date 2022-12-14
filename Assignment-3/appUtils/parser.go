@@ -1,4 +1,4 @@
-package utils
+package apputils
 
 func checkWind(respWind int) string {
 	var wind string
