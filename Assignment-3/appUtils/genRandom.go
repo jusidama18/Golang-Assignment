@@ -9,7 +9,7 @@ func randNumber(min int, max int) (int, int) {
 	water := rand.Intn(max-min+1) + min
 	wind := rand.Intn(max-min+1) + min
 
-	log.Printf("Generate : [ Water : %d | Wind : %d ]\n", water, wind)
+	log.Printf(`Generate : [ Water : %d | Wind : %d ]`, water, wind)
 	return water, wind
 }
 
