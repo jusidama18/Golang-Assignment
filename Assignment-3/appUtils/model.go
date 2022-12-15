@@ -11,6 +11,6 @@ type BodyCuaca struct {
 
 const (
 	IndexHTML = "index.html"
-	JSONFile  = "cuaca.jso"
+	JSONFile  = "cuaca.json"
 	SleepTime = 15
 )

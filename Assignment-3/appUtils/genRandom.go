@@ -15,7 +15,7 @@ func randNumber(min int, max int) (int, int) {
 
 func GenerateRandom() *BodyCuaca {
 	min := 1
-	max := 100
+	max := 20
 
 	water, wind := randNumber(min, max)
 

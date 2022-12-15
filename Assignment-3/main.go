@@ -5,7 +5,6 @@ import (
 	"html/template"
 	"log"
 	"net/http"
-	"os"
 	"time"
 )
 
@@ -30,6 +29,6 @@ func DisplayHTML(w http.ResponseWriter, r *http.Request) {
 func main() {
 	go AutoUpdateData()
 	http.HandleFunc("/", DisplayHTML)
-	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+	http.ListenAndServe(":8080", nil)
 
 }

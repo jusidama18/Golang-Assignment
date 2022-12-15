@@ -3,7 +3,7 @@ package apputils
 func checkWind(respWind int) string {
 	var wind string
 
-	if respWind < 7 {
+	if respWind <= 6 {
 		wind = "Aman"
 	} else if respWind >= 7 && respWind <= 15 {
 		wind = "Siaga"
@@ -17,7 +17,7 @@ func checkWind(respWind int) string {
 func checkWater(respWater int) string {
 	var water string
 
-	if respWater < 6 {
+	if respWater <= 5 {
 		water = "Aman"
 	} else if respWater >= 6 && respWater <= 8 {
 		water = "Siaga"
